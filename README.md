@@ -1,2 +1,2 @@
 # delivery_calculator
-delivery_calculator
+Функция расчёта стоимости доставки
