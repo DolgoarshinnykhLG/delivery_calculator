@@ -26,7 +26,7 @@ class DeliveryCalculator:
             delivery_load: Workload,
             fragile_type: FragileType
     ) -> Optional[float]:
-        if fragile_type is fragile_type.FRAGILE and distance is DeliveryDistance.MORE_30:
+        if fragile_type is FragileType.FRAGILE and distance is DeliveryDistance.MORE_30:
             return
 
         self.cost = (distance.value + dimensions.value + fragile_type.value) * delivery_load.value
